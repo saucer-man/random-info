@@ -1,4 +1,4 @@
-package main
+package random-info
 
 import (
 	"encoding/json"
@@ -7,20 +7,7 @@ import (
 	"time"
 )
 
-func main() {
-	fmt.Println("hello")
-	name, err := RandomName()
-	if err != nil {
-		fmt.Println("生成随机姓名出错")
-	}
-	fmt.Printf("生成的姓名为：%s\n", name)
 
-	addr, err := RandomAddr()
-	if err != nil {
-		fmt.Println("生成随机地址出错")
-	}
-	fmt.Printf("生成的地址为：%s\n", addr)
-}
 
 func RandomName() (string, error) {
 	rand.Seed(time.Now().Unix())
