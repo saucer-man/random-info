@@ -1,4 +1,4 @@
-package random-info
+package randominfo
 
 import (
 	"encoding/json"
@@ -6,8 +6,6 @@ import (
 	"math/rand"
 	"time"
 )
-
-
 
 func RandomName() (string, error) {
 	rand.Seed(time.Now().Unix())
