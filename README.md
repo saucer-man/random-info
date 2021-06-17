@@ -5,8 +5,6 @@
 
 - 生成姓名
 - 生成地址
-
-todo
 - 手机号
 - 身份证号码
 
@@ -22,16 +20,19 @@ import(
 
 func main() {
 	fmt.Println("hello")
-	name, err := info.RandomName()
-	if err != nil {
-		fmt.Println("生成随机姓名出错")
-	}
+	name, _ := info.RandomName()
 	fmt.Printf("生成的姓名为：%s\n", name)
 
-	addr, err := info.RandomAddr()
-	if err != nil {
-		fmt.Println("生成随机地址出错")
-	}
+	phone, _ := info.RandomName()
+	fmt.Printf("生成的手机号码为：%s\n", phone)
+
+	addr, _ := info.RandomAddr()
 	fmt.Printf("生成的地址为：%s\n", addr)
+
+	idcard, _ := info.RandomIDcard("150701")
+	fmt.Printf("生成的身份证号码为：%s\n", idcard)
+
+	info, _ := info.RandomInfo()
+	fmt.Printf("生成的个人信息为：%v\n", info)
 }
 ```
