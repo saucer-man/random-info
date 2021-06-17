@@ -23,7 +23,7 @@ func main() {
 	name, _ := info.RandomName()
 	fmt.Printf("生成的姓名为：%s\n", name)
 
-	phone, _ := info.RandomName()
+	phone, _ := info.RandomPhone()
 	fmt.Printf("生成的手机号码为：%s\n", phone)
 
 	addr, _ := info.RandomAddr()
